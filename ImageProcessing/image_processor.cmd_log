@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/Ananya Agrawal/Desktop/Image Processing/ImageProcessing/image_processor.xst" -ofn "C:/Users/Ananya Agrawal/Desktop/Image Processing/ImageProcessing/image_processor.syr" 
+xst -intstyle ise -ifn "C:/Users/Ananya Agrawal/Desktop/Image Processing/ImageProcessing/image_processor.xst" -ofn "C:/Users/Ananya Agrawal/Desktop/Image Processing/ImageProcessing/image_processor.syr" 
+xst -intstyle ise -ifn "C:/Users/Ananya Agrawal/Desktop/Image Processing/ImageProcessing/image_processor.xst" -ofn "C:/Users/Ananya Agrawal/Desktop/Image Processing/ImageProcessing/image_processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xa7a100t-csg324-2I "image_processor.ngc" image_processor.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o image_processor_map.ncd image_processor.ngd image_processor.pcf 
+par -w -intstyle ise -ol high -mt off image_processor_map.ncd image_processor.ncd image_processor.pcf 
+trce -intstyle ise -v 3 -s 2I -n 3 -fastpaths -xml image_processor.twx image_processor.ncd -o image_processor.twr image_processor.pcf 
+xst -intstyle ise -ifn "C:/Users/Ananya Agrawal/Desktop/Image Processing/ImageProcessing/image_processor.xst" -ofn "C:/Users/Ananya Agrawal/Desktop/Image Processing/ImageProcessing/image_processor.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xa7a100t-csg324-2I "image_processor.ngc" image_processor.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o image_processor_map.ncd image_processor.ngd image_processor.pcf 
+par -w -intstyle ise -ol high -mt off image_processor_map.ncd image_processor.ncd image_processor.pcf 
+trce -intstyle ise -v 3 -s 2I -n 3 -fastpaths -xml image_processor.twx image_processor.ncd -o image_processor.twr image_processor.pcf 
